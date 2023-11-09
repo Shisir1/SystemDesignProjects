@@ -19,12 +19,12 @@ public class SocialMediaApp {
 
     public List<Post> getPosts(User user){
         //get posts of a user and their friends
-        return null;
+        return new SocialMediaApp().getPosts(user);
     }
 
     public List<Comment> getComments(Post post){
         //get comments of a post
-        return null;
+        return new SocialMediaApp().getComments(post);
     }
 
     public void addFriend(User user1, User user2){
